@@ -1,0 +1,7 @@
+node_modules/
+.project/
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.csv

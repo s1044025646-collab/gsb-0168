@@ -1,0 +1,21 @@
+{
+  "name": "prismatic-hull-hydrostatics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for prismatic-hull static flotation and righting-arm (GZ curve) analysis on an ideal closed-section model.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-sqlite --test --test-reporter=spec test/*.test.ts",
+    "demo": "node --experimental-sqlite scripts/demo.ts",
+    "start": "node --experimental-sqlite src/api/server.ts",
+    "stop": "powershell -ExecutionPolicy Bypass -File scripts/stop.ps1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.8.0"
+  }
+}
